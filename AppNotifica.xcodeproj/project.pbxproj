@@ -17,6 +17,13 @@
 		41239EA528F840EE00D92C31 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EA428F840EE00D92C31 /* AppNotificaTests.swift */; };
 		41239EAF28F840EE00D92C31 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */; };
 		41239EB128F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */; };
+<<<<<<< Updated upstream
+=======
+		4157A2BF28F9A5E900E6D55E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A2BE28F9A5E900E6D55E /* Coordinator.swift */; };
+		4157A2C128F9A5FC00E6D55E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A2C028F9A5FC00E6D55E /* LoginCoordinator.swift */; };
+		4157A2C328F9A6AF00E6D55E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A2C228F9A6AF00E6D55E /* LoginView.swift */; };
+		4157A2C528F9A6C200E6D55E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A2C428F9A6C200E6D55E /* LoginViewController.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		41239EAA28F840EE00D92C31 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		4157A2BE28F9A5E900E6D55E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4157A2C028F9A5FC00E6D55E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		4157A2C228F9A6AF00E6D55E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4157A2C428F9A6C200E6D55E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +115,13 @@
 		41239E8928F840EA00D92C31 /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				41239E8A28F840EA00D92C31 /* AppDelegate.swift */,
-				41239E8C28F840EA00D92C31 /* SceneDelegate.swift */,
-				41239E8E28F840EA00D92C31 /* ViewController.swift */,
-				41239E9028F840EA00D92C31 /* Main.storyboard */,
-				41239E9628F840ED00D92C31 /* Assets.xcassets */,
-				41239E9828F840ED00D92C31 /* LaunchScreen.storyboard */,
+				4157A2BB28F9A59C00E6D55E /* Source */,
+				4157A2BA28F9A56A00E6D55E /* Resource */,
 				41239E9B28F840ED00D92C31 /* Info.plist */,
+<<<<<<< Updated upstream
 				41239E9328F840EB00D92C31 /* AppNotifica.xcdatamodeld */,
+=======
+>>>>>>> Stashed changes
 			);
 			path = AppNotifica;
 			sourceTree = "<group>";
@@ -128,6 +141,47 @@
 				41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */,
 			);
 			path = AppNotificaUITests;
+			sourceTree = "<group>";
+		};
+		4157A2BA28F9A56A00E6D55E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				41239E8A28F840EA00D92C31 /* AppDelegate.swift */,
+				41239E8C28F840EA00D92C31 /* SceneDelegate.swift */,
+				41239E8E28F840EA00D92C31 /* ViewController.swift */,
+				41239E9028F840EA00D92C31 /* Main.storyboard */,
+				41239E9628F840ED00D92C31 /* Assets.xcassets */,
+				41239E9828F840ED00D92C31 /* LaunchScreen.storyboard */,
+				41239E9328F840EB00D92C31 /* AppNotifica.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4157A2BB28F9A59C00E6D55E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4157A2BD28F9A5B900E6D55E /* Controller */,
+				4157A2BC28F9A5AE00E6D55E /* Coordinator */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4157A2BC28F9A5AE00E6D55E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4157A2BE28F9A5E900E6D55E /* Coordinator.swift */,
+				4157A2C028F9A5FC00E6D55E /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4157A2BD28F9A5B900E6D55E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4157A2C228F9A6AF00E6D55E /* LoginView.swift */,
+				4157A2C428F9A6C200E6D55E /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4157A2C128F9A5FC00E6D55E /* LoginCoordinator.swift in Sources */,
+				4157A2C328F9A6AF00E6D55E /* LoginView.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+<<<<<<< Updated upstream
+=======
+				4157A2C528F9A6C200E6D55E /* LoginViewController.swift in Sources */,
+				4157A2BF28F9A5E900E6D55E /* Coordinator.swift in Sources */,
+>>>>>>> Stashed changes
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
 			);
