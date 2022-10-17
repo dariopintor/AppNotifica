@@ -20,12 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 window = UIWindow(windowScene: winScene)
                 self.window?.makeKeyAndVisible()
                 
-                //
+                //cria a navigationCrontroller
                 let navigationController = UINavigationController()
+                //digo que a primeira tela a ser criada será um navigation
                 self.window?.rootViewController = navigationController
                 
-                //
+                //passo o navigationController daqui para o coordinator LoginCoordinatior
                 let coordinator = LoginCoordinator(navigationController: navigationController)
+        
                 coordinator.start()
             }
     
