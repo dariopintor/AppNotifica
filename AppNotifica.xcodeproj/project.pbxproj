@@ -17,10 +17,15 @@
 		41239EA528F840EE00D92C31 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EA428F840EE00D92C31 /* AppNotificaTests.swift */; };
 		41239EAF28F840EE00D92C31 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */; };
 		41239EB128F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */; };
+		415C11DA290008210076ABED /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C11D9290008210076ABED /* UIcolor+.swift */; };
+		415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C11DB29000F9A0076ABED /* TextFieldDefault.swift */; };
+		415C11DE290017470076ABED /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C11DD290017470076ABED /* ButtonDefault.swift */; };
+		415C11E029001A310076ABED /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C11DF29001A310076ABED /* ImageDefault.swift */; };
 		415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DFB4928FD603E00D249D1 /* LoginView.swift */; };
 		415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DFB4A28FD603E00D249D1 /* LoginViewController.swift */; };
 		415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DFB4C28FD604000D249D1 /* LoginCoordinator.swift */; };
 		415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DFB4D28FD604000D249D1 /* Coordinator.swift */; };
+		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +60,15 @@
 		41239EAA28F840EE00D92C31 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		415C11D9290008210076ABED /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+.swift"; sourceTree = "<group>"; };
+		415C11DB29000F9A0076ABED /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		415C11DD290017470076ABED /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		415C11DF29001A310076ABED /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
 		415DFB4928FD603E00D249D1 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		415DFB4A28FD603E00D249D1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		415DFB4C28FD604000D249D1 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		415DFB4D28FD604000D249D1 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +143,19 @@
 			path = AppNotificaUITests;
 			sourceTree = "<group>";
 		};
+		415C11D8290007F70076ABED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				415C11D9290008210076ABED /* UIcolor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		415DFB4628FD5FCE00D249D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				415C11D8290007F70076ABED /* Extensions */,
+				41994E2428FFFB91009591C4 /* Infrastructure */,
 				415DFB4828FD603E00D249D1 /* Controller */,
 				415DFB4B28FD604000D249D1 /* Coordinator */,
 			);
@@ -172,6 +192,17 @@
 				415DFB4D28FD604000D249D1 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		41994E2428FFFB91009591C4 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				41994E2528FFFC37009591C4 /* LabelDefault.swift */,
+				415C11DB29000F9A0076ABED /* TextFieldDefault.swift */,
+				415C11DD290017470076ABED /* ButtonDefault.swift */,
+				415C11DF29001A310076ABED /* ImageDefault.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +341,12 @@
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+				41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
+				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
+				415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */,
+				415C11DA290008210076ABED /* UIcolor+.swift in Sources */,
+				415C11E029001A310076ABED /* ImageDefault.swift in Sources */,
 				415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
 			);
