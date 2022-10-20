@@ -11,7 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
     
     //MARK: -  Clouseres
-    var onRegisterTap: (() -> Void)?//cria uma variável que é do
+    var onRegisterTap: (() -> Void)?
+    
+    //cria uma variável que é do
     
     lazy var loginView: LoginView = {
         let loginView = LoginView()
