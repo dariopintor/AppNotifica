@@ -25,6 +25,17 @@ class RegisterCoordinator: Coordinator {
       func start() {
         let viewController = RegisterViewController()
             self.navigationController.pushViewController(viewController, animated: true)
+          
+          
+          viewController.onLoginTap = {
+              self.gotoLogin()
+          }
 
+    }
+    
+    //função que chama a registerView
+    func  gotoLogin() {
+       let coordinator = LoginCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }

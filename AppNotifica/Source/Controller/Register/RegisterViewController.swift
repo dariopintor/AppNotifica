@@ -12,11 +12,22 @@ import UIKit
 
 class RegisterViewController: UIViewController {
    
+    //MARK: -  Clouseres
+    var onLoginTap: (() -> Void)?
+    
     //cria uma variável que é do tipo LoginView
-    var viewMain = RegisterView()
+    lazy var registerView: RegisterView = {
+        let registerView = RegisterView()
+         registerView.onLoginTap = {
+           self.onLoginTap?()
+       }
+       return registerView
+       
+    } ()
+    
     
        override func loadView(){
-           self.view = viewMain
+           self.view = registerView
        }
        
     // é executado quando está carregando
