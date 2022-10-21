@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: ViewControllerDefault {
     
     //MARK: -  Clouseres
     
@@ -28,10 +28,7 @@ class HomeViewController: UIViewController {
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = ""
-        
-        self.navigationController?.navigationBar.prefersLargeTitles=true
-        
+        self.title = "Home"
     }
     
 }

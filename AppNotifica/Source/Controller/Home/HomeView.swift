@@ -17,6 +17,7 @@ class HomeView: UIView {
     override init(frame: CGRect) {
          super.init(frame: frame)
         setupVisualElements()
+        self.backgroundColor = .viewBackGroundColor
     }
     
     required init? (coder: NSCoder){
@@ -24,7 +25,7 @@ class HomeView: UIView {
     }
     
      func setupVisualElements() {
-        setupVisualElements()
+
     }
     
 }

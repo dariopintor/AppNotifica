@@ -31,6 +31,7 @@
 		4177CC462902BAD0001E2621 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC452902BAD0001E2621 /* HomeView.swift */; };
 		4177CC482902BAF4001E2621 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC472902BAF4001E2621 /* HomeViewController.swift */; };
 		4177CC4A2902BB14001E2621 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC492902BB14001E2621 /* HomeCoordinator.swift */; };
+		4177CC5029030C54001E2621 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */; };
 		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		4177CC452902BAD0001E2621 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4177CC472902BAF4001E2621 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4177CC492902BB14001E2621 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +245,7 @@
 				415C11DB29000F9A0076ABED /* TextFieldDefault.swift */,
 				415C11DD290017470076ABED /* ButtonDefault.swift */,
 				415C11DF29001A310076ABED /* ImageDefault.swift */,
+				4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
+				4177CC5029030C54001E2621 /* ViewControllerDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,

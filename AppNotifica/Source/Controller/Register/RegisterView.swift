@@ -19,7 +19,7 @@ class RegisterView: UIView {
             
         }
     
-    //MARK: - Initialize
+    //MARK: - Clouseres
     var onLoginTap: (()->Void)?
      
     //cria a função com as propriadades da label no login
