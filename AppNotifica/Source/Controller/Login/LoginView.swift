@@ -8,16 +8,8 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView {
-    //MARK: - Initialize
-        override init(frame: CGRect) {
-            //chama o frame da superclasse
-            super.init(frame: frame)
-            // muda a cor de fundo do app para branco
-            self.backgroundColor = .viewBackGroundColor
-            setupVisualElements()
-            
-        }
+class LoginView: ViewDefault {
+    
     
   //MARK: -  Clouseres
   var onRegisterTap: (() -> Void)?
@@ -42,7 +34,7 @@ class LoginView: UIView {
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
         
     
-    func setupVisualElements() {
+    override func setupVisualElements() {
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -94,10 +86,6 @@ class LoginView: UIView {
         
         ])
     }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     //MARK: - Actions
     @objc
     private func registerTap(){

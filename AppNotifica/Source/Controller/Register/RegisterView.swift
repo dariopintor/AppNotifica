@@ -8,16 +8,7 @@
 import Foundation
 import UIKit
 
-class RegisterView: UIView {
-    //MARK: - Initialize
-        override init(frame: CGRect) {
-            //chama o frame da superclasse
-            super.init(frame: frame)
-            // muda a cor de fundo do app para branco
-            self.backgroundColor = .viewBackGroundColor
-            setupVisualElements()
-            
-        }
+class RegisterView: ViewDefault {
     
     //MARK: - Clouseres
     var onLoginTap: (()->Void)?
@@ -43,7 +34,7 @@ class RegisterView: UIView {
    
         
     
-    func setupVisualElements() {
+    override func setupVisualElements() {
         
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -98,9 +89,6 @@ class RegisterView: UIView {
 
         
         ])
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: - Actions
