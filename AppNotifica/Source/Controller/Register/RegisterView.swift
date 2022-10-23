@@ -117,20 +117,15 @@ class RegisterView: ViewDefault {
 }
 
 extension RegisterView: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    
     //esconde o teclado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-       
         
-        if textField == emailTextField {
-            self.senhaTextField.becomeFirstResponder()
-        }
-        
-        if textField == senhaTextField {
-            self.confirmaSenhaTextField.becomeFirstResponder()
+        //configura o botão seguinte do teclado
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            
+            if textField == emailTextField {
+                self.senhaTextField.becomeFirstResponder()
+            
         } else {
             textField.resignFirstResponder()
         }
