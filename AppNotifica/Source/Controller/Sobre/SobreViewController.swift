@@ -1,35 +1,33 @@
 //
-//  HomeViewController.swift
+//  SobreViewController.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 21/10/22.
+//  Created by Dario Pintor on 25/10/22.
 //
 
 import Foundation
 import UIKit
 
-class HomeViewController: ViewControllerDefault {
+class SobreViewController: ViewControllerDefault {
     
     //MARK: -  Clouseres
     
     //cria uma variável que é do
     
-    lazy var homeView: HomeView = {
-        let homeView = HomeView()
+    lazy var sobreView: SobreView = {
+        let sobreView = SobreView()
         
         
-        return homeView
+        return sobreView
     }()
     
     override func loadView(){
-        self.view = homeView
+        self.view = sobreView
     }
     
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Ocorrências"
+        self.title = "Sobre"
     }
-    
 }
-
