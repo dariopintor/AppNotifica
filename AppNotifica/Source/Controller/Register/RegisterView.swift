@@ -125,6 +125,9 @@ extension RegisterView: UITextFieldDelegate {
             if textField == emailTextField {
                 self.senhaTextField.becomeFirstResponder()
                 
+            } else if textField == senhaTextField {
+                self.confirmaSenhaTextField.becomeFirstResponder()
+                
             } else {
                 textField.resignFirstResponder()
             }
