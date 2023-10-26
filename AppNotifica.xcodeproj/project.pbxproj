@@ -43,6 +43,10 @@
 		41CEB5FC2907E7390070C628 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */; };
 		41CEB5FE2907E7530070C628 /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FD2907E7530070C628 /* SobreView.swift */; };
 		41CEB6002907E7660070C628 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FF2907E7660070C628 /* SobreViewController.swift */; };
+		EE7463242AE93F9800F9F1D9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */; };
+		EE7463262AE9410600F9F1D9 /* Ocorrencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463252AE9410600F9F1D9 /* Ocorrencia.swift */; };
+		EE7463282AE951DB00F9F1D9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463272AE951DB00F9F1D9 /* DataManager.swift */; };
+		EE74632A2AE9537600F9F1D9 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463292AE9537600F9F1D9 /* NovaOcorrenciaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,10 @@
 		41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 		41CEB5FD2907E7530070C628 /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
 		41CEB5FF2907E7660070C628 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EE7463252AE9410600F9F1D9 /* Ocorrencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocorrencia.swift; sourceTree = "<group>"; };
+		EE7463272AE951DB00F9F1D9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EE7463292AE9537600F9F1D9 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +198,7 @@
 			children = (
 				415C11D8290007F70076ABED /* Extensions */,
 				41994E2428FFFB91009591C4 /* Infrastructure */,
-				415DFB4828FD603E00D249D1 /* Controller */,
+				415DFB4828FD603E00D249D1 /* Scenes */,
 				415DFB4B28FD604000D249D1 /* Coordinator */,
 			);
 			path = Source;
@@ -210,7 +218,7 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		415DFB4828FD603E00D249D1 /* Controller */ = {
+		415DFB4828FD603E00D249D1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				41CEB5F42907E6BC0070C628 /* Sobre */,
@@ -220,7 +228,7 @@
 				4177CC3D29013C86001E2621 /* Register */,
 				4177CC3C29013C66001E2621 /* Login */,
 			);
-			path = Controller;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		415DFB4B28FD604000D249D1 /* Coordinator */ = {
@@ -258,8 +266,10 @@
 		4177CC442902BAB8001E2621 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EE7463252AE9410600F9F1D9 /* Ocorrencia.swift */,
 				4177CC452902BAD0001E2621 /* HomeView.swift */,
 				4177CC472902BAF4001E2621 /* HomeViewController.swift */,
+				EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -273,6 +283,7 @@
 				415C11DF29001A310076ABED /* ImageDefault.swift */,
 				4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */,
 				41CEB5E629041FEE0070C628 /* ViewDefault.swift */,
+				EE7463272AE951DB00F9F1D9 /* DataManager.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -291,6 +302,7 @@
 				41CEB5F52907E6EB0070C628 /* NovaOcorrenciaView.swift */,
 				41CEB5F72907E7090070C628 /* NovaOcorrenciaViewController.swift */,
 				41B2A29E293E27F9006AE1A8 /* EscolherImagem.swift */,
+				EE7463292AE9537600F9F1D9 /* NovaOcorrenciaViewModel.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -444,6 +456,7 @@
 				41B2A29F293E27F9006AE1A8 /* EscolherImagem.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
+				EE74632A2AE9537600F9F1D9 /* NovaOcorrenciaViewModel.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
 				41CEB5FE2907E7530070C628 /* SobreView.swift in Sources */,
 				41CEB5F62907E6EB0070C628 /* NovaOcorrenciaView.swift in Sources */,
@@ -451,8 +464,10 @@
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
 				4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */,
 				41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */,
+				EE7463262AE9410600F9F1D9 /* Ocorrencia.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				41CEB5E729041FEE0070C628 /* ViewDefault.swift in Sources */,
+				EE7463282AE951DB00F9F1D9 /* DataManager.swift in Sources */,
 				41CEB5FC2907E7390070C628 /* NovaOcorrenciaCoordinator.swift in Sources */,
 				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
 				415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */,
@@ -464,6 +479,7 @@
 				415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
 				41CEB5FA2907E7250070C628 /* SobreCoordinator.swift in Sources */,
+				EE7463242AE93F9800F9F1D9 /* HomeViewModel.swift in Sources */,
 				4177CC4A2902BB14001E2621 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
