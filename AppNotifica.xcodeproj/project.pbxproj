@@ -43,6 +43,7 @@
 		41CEB5FC2907E7390070C628 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */; };
 		41CEB5FE2907E7530070C628 /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FD2907E7530070C628 /* SobreView.swift */; };
 		41CEB6002907E7660070C628 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FF2907E7660070C628 /* SobreViewController.swift */; };
+		EE0608052AF2804C007A394A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0608042AF2804C007A394A /* test.json */; };
 		EE7463242AE93F9800F9F1D9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */; };
 		EE7463262AE9410600F9F1D9 /* Ocorrencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463252AE9410600F9F1D9 /* Ocorrencia.swift */; };
 		EE7463282AE951DB00F9F1D9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7463272AE951DB00F9F1D9 /* DataManager.swift */; };
@@ -107,6 +108,7 @@
 		41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 		41CEB5FD2907E7530070C628 /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
 		41CEB5FF2907E7660070C628 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		EE0608042AF2804C007A394A /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EE7463252AE9410600F9F1D9 /* Ocorrencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocorrencia.swift; sourceTree = "<group>"; };
 		EE7463272AE951DB00F9F1D9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				4177CC452902BAD0001E2621 /* HomeView.swift */,
 				4177CC472902BAF4001E2621 /* HomeViewController.swift */,
 				EE7463232AE93F9800F9F1D9 /* HomeViewModel.swift */,
+				EE0608042AF2804C007A394A /* test.json */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41239E9A28F840ED00D92C31 /* LaunchScreen.storyboard in Resources */,
+				EE0608052AF2804C007A394A /* test.json in Resources */,
 				41239E9728F840ED00D92C31 /* Assets.xcassets in Resources */,
 				41239E9228F840EA00D92C31 /* Main.storyboard in Resources */,
 			);

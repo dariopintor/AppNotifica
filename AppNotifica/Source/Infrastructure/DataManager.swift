@@ -13,16 +13,34 @@ class DataManager {
     var ocorrencias: [Ocorrencia] = []
 
     private init() {
-        ocorrencias = [.init(title: "Ocorrencia #1", description: "Descrição", location: "Campus", status: "Não resolvida"),
-                       .init(title: "Ocorrencia #2", description: "Descrição", location: "Campus", status: "Não resolvida"),
-                       .init(title: "Ocorrencia #3", description: "Descrição", location: "Campus", status: "Não resolvida"),
-                       .init(title: "Ocorrencia #4", description: "Descrição", location: "Campus", status: "Não resolvida"),
-                       .init(title: "Ocorrencia #5", description: "Descrição", location: "Campus", status: "Não resolvida")]
+        ocorrencias = loadData()
+    }
+
+    func loadData() -> [Ocorrencia] {
+//        guard let jsonURL = Bundle.main.url(forResource: "test", withExtension: "json") else {
+//            return []
+//        }
+
+//        if let data = try? Data(contentsOf: jsonURL) {
+
+        if let data = UserDefaults.standard.data(forKey: "DATA_OCORRENCIAS") {
+            do {
+                let objects = try JSONDecoder().decode([Ocorrencia].self, from: data)
+                return objects
+            } catch {
+                print(error)
+            }
+        }
+
+        return []
     }
 
     func add(ocorrencia: Ocorrencia) {
         ocorrencias.append(ocorrencia)
 
-        print(ocorrencias)
+        if let data = try? JSONEncoder().encode(ocorrencias) {
+            UserDefaults.standard.setValue(data, forKey: "DATA_OCORRENCIAS")
+        }
     }
 }
+

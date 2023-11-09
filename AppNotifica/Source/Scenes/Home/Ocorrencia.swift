@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Ocorrencia {
+struct Ocorrencia: Codable {
     var imageBase64: String?
     var title: String
     var description: String
