@@ -14,6 +14,16 @@ class HomeView: ViewDefault {
     
     //MARK: - Inits
     
+    var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel){
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
    override  func setupVisualElements() {
